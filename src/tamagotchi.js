@@ -23,6 +23,9 @@ class Tamago {
     if (this.hunger > 75 || this.happiness < 25 || this.energy < 10 || this.pooped >= 2) {
       this.sick = true;
     }
+    else {
+      this.sick = false;
+    }
     if (this.hunger > 95 || this.happiness < 5 || this.energy < 5 || this.pooped >= 5) {
       this.die();
     }
