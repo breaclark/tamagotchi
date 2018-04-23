@@ -80,4 +80,8 @@ $(document).ready(function () {
     checkNormal(tamago);
     showStats(tamago);
   });
+
+  $("#reset").click(function () {
+    location.reload();
+  });
 });
