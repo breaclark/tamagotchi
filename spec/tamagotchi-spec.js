@@ -34,5 +34,18 @@ describe ("Tamago", function () {
     expect(tamago.energy).toEqual(100);
   });
 
+  it ("should set pooped to 1 and bathroom to 30, then pooped 0 when cleaned", function () {
+    tamago.poop();
+    expect(tamago.pooped).toEqual(1);
+    expect(tamago.bathroom).toEqual(30);
+    tamago.clean();
+    expect(tamago.pooped).toEqual(0);
+  });
+
+  it ("should set alive to false", function () {
+    tamago.die();
+    expect(tamago.alive).toBeFalsy();
+  });
+
 
 });
