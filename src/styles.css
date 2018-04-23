@@ -2,9 +2,13 @@ body {
   background-color: #7FDBFF;
 }
 
-img {
+.tamago-gif {
   max-width: 133px;
   display: none;
+}
+
+.icon {
+  width: 20px;
 }
 
 #reset {
