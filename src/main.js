@@ -17,6 +17,7 @@ function checkNormal (tamago) {
     $("#die").show();
     $(".buttons").hide();
     $("#stats").hide();
+    $("#reset").show();
   } else if (tamago.sick === true) {
     $("#sick").show();
   } else if (tamago.pooped > 0) {

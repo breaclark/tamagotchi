@@ -6,3 +6,7 @@ img {
   max-width: 133px;
   display: none;
 }
+
+#reset {
+  display: none;
+}
