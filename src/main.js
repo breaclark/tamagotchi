@@ -18,24 +18,29 @@ $(document).ready(function () {
   setInterval(function () {
     tamago.timetick();
     showStats(tamago);
+    //if it's sick, has pooped, or died, call to show that here
   }, 5000);
 
   $("#feed").click(function () {
+    //play a feeding gif
     tamago.feed();
     showStats(tamago);
   });
 
   $("#play").click(function () {
+    //have it make a happy face
     tamago.play();
     showStats(tamago);
   });
 
   $("#sleep").click(function () {
+    //play a sleep gif for a bit
     tamago.sleep();
     showStats(tamago);
   });
 
   $("#clean").click(function () {
+    //take away the poop
     tamago.clean();
     showStats(tamago);
   });
