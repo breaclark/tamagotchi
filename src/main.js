@@ -27,6 +27,13 @@ function checkNormal (tamago) {
   }
 }
 
+function wait (tamago) {
+  setTimeout(function() {
+    $(".tamago-gif").hide();
+    checkNormal(tamago);
+  }, 2000);
+}
+
 $(document).ready(function () {
   let tamago  = new Tamago();
   $("#egg").show();
@@ -45,10 +52,7 @@ $(document).ready(function () {
   $("#feed").click(function () {
     $(".tamago-gif").hide();
     $("#eat").show();
-    setTimeout(function() {
-      $(".tamago-gif").hide();
-      checkNormal(tamago);
-    }, 2000);
+    wait(tamago);
     tamago.feed();
     showStats(tamago);
   });
@@ -56,10 +60,7 @@ $(document).ready(function () {
   $("#play").click(function () {
     $(".tamago-gif").hide();
     $("#happy").show();
-    setTimeout(function() {
-      $(".tamago-gif").hide();
-      checkNormal(tamago);
-    }, 2000);
+    wait(tamago);
     tamago.play();
     showStats(tamago);
   });
@@ -67,10 +68,7 @@ $(document).ready(function () {
   $("#sleep").click(function () {
     $(".tamago-gif").hide();
     $("#sleeping").show();
-    setTimeout(function() {
-      $(".tamago-gif").hide();
-      checkNormal(tamago);
-    }, 2000);
+    wait(tamago);
     tamago.sleep();
     showStats(tamago);
   });
