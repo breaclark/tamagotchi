@@ -1,0 +1,6 @@
+class Tamago {
+  constructor () {
+    ß
+
+  }
+}
