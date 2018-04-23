@@ -12,6 +12,7 @@ function showStats (tamago) {
 }
 
 function checkNormal (tamago) {
+  $(".tamago-gif").hide();
   if (tamago.pooped > 0) {
     $("#poop").show();
     return;
@@ -66,7 +67,6 @@ $(document).ready(function () {
   });
 
   $("#clean").click(function () {
-    //take away the poop
     tamago.clean();
     showStats(tamago);
   });
