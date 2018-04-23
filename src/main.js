@@ -11,6 +11,22 @@ function showStats (tamago) {
   $("#bathroom h3").text(tamago.bathroom);
 }
 
+function checkNormal (tamago) {
+  if (tamago.pooped > 0) {
+    $("#poop").show();
+    return;
+  }
+  if (tamago.sick === true) {
+    $("#sick").show();
+    return;
+  }
+  if (tamago.alive === false) {
+    $("#die").show();
+    return;
+  }
+  $("#normal").show();
+}
+
 $(document).ready(function () {
   let tamago  = new Tamago();
   $("#egg").show();
@@ -23,7 +39,7 @@ $(document).ready(function () {
   setInterval(function () {
     tamago.timetick();
     showStats(tamago);
-    //if it's sick, has pooped, or died, call to show that here
+    checkNormal(tamago);
   }, 5000);
 
   $("#feed").click(function () {
@@ -31,9 +47,8 @@ $(document).ready(function () {
     $("#eat").show();
     setTimeout(function() {
       $(".tamago-gif").hide();
-      // if its pooped or is still sick, check here or do another check maybe
-      $("#normal").show();
-    }, 5000);
+      checkNormal(tamago);
+    }, 2000);
     tamago.feed();
     showStats(tamago);
   });
