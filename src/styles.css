@@ -42,6 +42,10 @@ body {
   margin-top: -10px;
 }
 
+#reset {
+  margin-top: 65px;
+}
+
 .btn {
   border-radius: 50%;
 }
