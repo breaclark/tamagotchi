@@ -16,4 +16,13 @@ describe ("Tamago", function () {
     expect(tamago.hunger).toEqual(0);
   });
 
+  it ("should decrease and increase levels appropriately", function () {
+    tamago.timetick();
+    expect(tamago.hunger).toEqual(35);
+    expect(tamago.happiness).toEqual(95);
+    expect(tamago.energy).toEqual(98);
+    expect(tamago.bathroom).toEqual(32);
+  });
+
+
 });
