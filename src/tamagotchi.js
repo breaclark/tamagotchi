@@ -4,7 +4,7 @@ class Tamago {
     this.happiness = 100;
     this.energy = 100;
     this.bathroom = 30;
-
+    this.alive = true;
   }
 
   timetick () {
@@ -12,6 +12,7 @@ class Tamago {
     this.happiness -= 5;
     this.energy -= 2;
     this.bathroom += 2;
+    //should check if alive too
   }
 
   feed () {
@@ -21,10 +22,10 @@ class Tamago {
     }
   }
 
-  // play () {
-  //
-  // }
-  //
+  play () {
+    this.happiness += 15;
+  }
+
   // sleep () {
   //
   // }
