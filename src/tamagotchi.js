@@ -7,9 +7,12 @@ class Tamago {
 
   }
 
-  // timetick () {
-  //
-  // }
+  timetick () {
+    this.hunger += 5;
+    this.happiness -= 5;
+    this.energy -= 2;
+    this.bathroom += 2;
+  }
 
   feed () {
     this.hunger -= 30;
