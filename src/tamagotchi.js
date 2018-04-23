@@ -57,10 +57,10 @@ class Tamago {
   }
 
   clean () {
-    this.pooped = 0;
-    if (this.bathroom >= 75) {
+    if (this.bathroom >= 75 && this.pooped > 0) {
       this.bathroom = 30;
     }
+    this.pooped = 0;
   }
 
 }

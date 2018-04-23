@@ -66,13 +66,19 @@ $(document).ready(function () {
   });
 
   $("#sleep").click(function () {
-    //play a sleep gif for a bit
+    $(".tamago-gif").hide();
+    $("#sleeping").show();
+    setTimeout(function() {
+      $(".tamago-gif").hide();
+      checkNormal(tamago);
+    }, 2000);
     tamago.sleep();
     showStats(tamago);
   });
 
   $("#clean").click(function () {
     tamago.clean();
+    checkNormal(tamago);
     showStats(tamago);
   });
 });
