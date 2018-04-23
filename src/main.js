@@ -55,7 +55,12 @@ $(document).ready(function () {
   });
 
   $("#play").click(function () {
-    //have it make a happy face
+    $(".tamago-gif").hide();
+    $("#happy").show();
+    setTimeout(function() {
+      $(".tamago-gif").hide();
+      checkNormal(tamago);
+    }, 2000);
     tamago.play();
     showStats(tamago);
   });
