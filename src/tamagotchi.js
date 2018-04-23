@@ -17,7 +17,7 @@ class Tamago {
     if (this.pooped > 0) {
       this.pooped += 1;
     }
-    if (this.bathroom >= 75) {
+    if (this.bathroom >= 90) {
       this.poop();
     }
     if (this.hunger > 75 || this.happiness < 25 || this.energy < 10 || this.pooped >= 2) {
@@ -55,7 +55,7 @@ class Tamago {
 
   clean () {
     this.pooped = 0;
-    if (this.bathroom >= 80) {
+    if (this.bathroom >= 75) {
       this.bathroom = 30;
     }
   }
