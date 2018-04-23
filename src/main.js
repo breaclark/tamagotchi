@@ -15,7 +15,7 @@ $(document).ready(function () {
   let tamago  = new Tamago();
   $("#egg").show();
   setTimeout(function() {
-    $("#egg").hide();
+    $(".tamago-gif").hide();
     $("#normal").show();
   }, 5000);
   showStats(tamago);
@@ -27,7 +27,13 @@ $(document).ready(function () {
   }, 5000);
 
   $("#feed").click(function () {
-    //play a feeding gif
+    $(".tamago-gif").hide();
+    $("#eat").show();
+    setTimeout(function() {
+      $(".tamago-gif").hide();
+      // if its pooped or is still sick, check here or do another check maybe
+      $("#normal").show();
+    }, 5000);
     tamago.feed();
     showStats(tamago);
   });
