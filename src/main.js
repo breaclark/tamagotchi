@@ -10,4 +10,12 @@ $(document).ready(function () {
   $("#happiness h3").text(tamago.happiness);
   $("#energy h3").text(tamago.energy);
   $("#bathroom h3").text(tamago.bathroom);
+
+  setInterval(function() {
+    tamago.timetick();
+    $("#hunger h3").text(tamago.hunger);
+    $("#happiness h3").text(tamago.happiness);
+    $("#energy h3").text(tamago.energy);
+    $("#bathroom h3").text(tamago.bathroom);
+  }, 5000);
 });
