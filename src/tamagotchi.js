@@ -4,6 +4,7 @@ class Tamago {
     this.happiness = 100;
     this.energy = 100;
     this.bathroom = 30;
+    this.pooped = 0;
     this.alive = true;
   }
 
@@ -12,8 +13,23 @@ class Tamago {
     this.happiness -= 5;
     this.energy -= 2;
     this.bathroom += 2;
-    //should check if alive too
+    if (this.pooped > 0) {
+      this.pooped += 1;
+    }
+    //should initiate things below if needed
   }
+
+  poop () {
+    this.pooped = 1;
+  }
+
+  // die () {
+  //
+  // }
+  //
+  // getSick () {
+  //
+  // }
 
   feed () {
     this.hunger -= 30;
@@ -29,10 +45,6 @@ class Tamago {
   sleep () {
     this.energy = 100;
   }
-  //
-  // clean () {
-  //
-  // }
 
 }
 
