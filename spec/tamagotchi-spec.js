@@ -47,5 +47,4 @@ describe ("Tamago", function () {
     expect(tamago.alive).toBeFalsy();
   });
 
-
 });

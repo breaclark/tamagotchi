@@ -5,6 +5,7 @@ class Tamago {
     this.energy = 100;
     this.bathroom = 30;
     this.pooped = 0;
+    this.sick = false;
     this.alive = true;
   }
 
@@ -18,6 +19,9 @@ class Tamago {
     }
     if (this.bathroom >= 75) {
       this.poop();
+    }
+    if (this.hunger > 75 || this.happiness < 25 || this.energy < 10 || this.pooped >= 2) {
+      this.sick = true;
     }
     if (this.hunger > 95 || this.happiness < 5 || this.energy < 5 || this.pooped >= 5) {
       this.die();
