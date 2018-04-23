@@ -2,6 +2,14 @@ body {
   background-color: #7FDBFF;
 }
 
+#background-egg {
+  position: absolute;
+  width: 400px;
+  z-index: -1;
+  margin-top: -186px;
+  margin-left: -110px;
+}
+
 .tamago-gif {
   max-width: 133px;
   display: none;
@@ -9,6 +17,29 @@ body {
 
 .icon {
   width: 20px;
+  margin: 2px;
+}
+
+#feed {
+  margin-top: 50px;
+  margin-left: -15px;
+}
+
+#play {
+  margin-top: 65px;
+}
+
+#sleep {
+  margin-top: 50px;
+}
+
+#clean {
+  margin-left: -20px;
+  margin-top: -10px;
+}
+
+.btn {
+  border-radius: 50%;
 }
 
 #reset {
