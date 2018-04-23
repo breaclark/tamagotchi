@@ -5,42 +5,48 @@
   </head>
   <body>
     <div class="container">
-      <div id="stats">
-        <div id="hunger">
-          <h2>Hunger: </h2>
-          <h3></h3>
+      <div class="row">
+        <div class="col" id="tamagotchi-interface">
+          <div id="tamagotchi">
+            <img id="background-egg" src="img/tamagotchi-background.png" alt="tamagotchi">
+            <img id="egg" class="tamago-gif" src="img/egg.gif" alt="tamagotchi">
+            <img id="normal" class="tamago-gif" src="img/normal.gif" alt="tamagotchi">
+            <img id="happy" class="tamago-gif" src="img/happy.gif" alt="tamagotchi">
+            <img id="eat" class="tamago-gif" src="img/eat.gif" alt="tamagotchi">
+            <img id="sleeping" class="tamago-gif" src="img/sleep.gif" alt="tamagotchi">
+            <img id="poop" class="tamago-gif" src="img/poop.gif" alt="tamagotchi">
+            <img id="sick" class="tamago-gif" src="img/sick.gif" alt="tamagotchi">
+            <img id="die" class="tamago-gif" src="img/die.gif" alt="tamagotchi">
+          </div>
+          <div class="buttons">
+            <button type="button" class="btn btn-light" id="feed"><img class="icon" src="img/chef.png" alt="feed"></button>
+            <button type="button" class="btn btn-light" id="play"><img class="icon" src="img/runner.png" alt="play"></button>
+            <button type="button" class="btn btn-light" id="sleep"><img class="icon" src="img/moon.png" alt="sleep"></button>
+            <button type="button" class="btn btn-light" id="clean"><img class="icon" src="img/toilet.png" alt="clean"></button>
+          </div>
+          <button type="button" class="btn btn-light" id="reset">Reset</button>
         </div>
-        <div id="happiness">
-          <h2>Happiness: </h2>
-          <h3></h3>
-        </div>
-        <div id="energy">
-          <h2>Energy: </h2>
-          <h3></h3>
-        </div>
-        <div id="bathroom">
-          <h2>Bathroom: </h2>
-          <h3></h3>
+        <div class="col">
+          <div id="stats">
+            <div id="hunger">
+              <h2>Hunger: </h2>
+              <h3></h3>
+            </div>
+            <div id="happiness">
+              <h2>Happiness: </h2>
+              <h3></h3>
+            </div>
+            <div id="energy">
+              <h2>Energy: </h2>
+              <h3></h3>
+            </div>
+            <div id="bathroom">
+              <h2>Bathroom: </h2>
+              <h3></h3>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="tamagotchi">
-        <img id="background-egg" src="img/tamagotchi-background.png" alt="tamagotchi">
-        <img id="egg" class="tamago-gif" src="img/egg.gif" alt="tamagotchi">
-        <img id="normal" class="tamago-gif" src="img/normal.gif" alt="tamagotchi">
-        <img id="happy" class="tamago-gif" src="img/happy.gif" alt="tamagotchi">
-        <img id="eat" class="tamago-gif" src="img/eat.gif" alt="tamagotchi">
-        <img id="sleeping" class="tamago-gif" src="img/sleep.gif" alt="tamagotchi">
-        <img id="poop" class="tamago-gif" src="img/poop.gif" alt="tamagotchi">
-        <img id="sick" class="tamago-gif" src="img/sick.gif" alt="tamagotchi">
-        <img id="die" class="tamago-gif" src="img/die.gif" alt="tamagotchi">
-      </div>
-      <div class="buttons">
-        <button type="button" class="btn btn-light" id="feed"><img class="icon" src="img/chef.png" alt="feed"></button>
-        <button type="button" class="btn btn-light" id="play"><img class="icon" src="img/runner.png" alt="play"></button>
-        <button type="button" class="btn btn-light" id="sleep"><img class="icon" src="img/moon.png" alt="sleep"></button>
-        <button type="button" class="btn btn-light" id="clean"><img class="icon" src="img/toilet.png" alt="clean"></button>
-      </div>
-      <button type="button" class="btn btn-light" id="reset">Reset</button>
     </div>
   </body>
 </html>

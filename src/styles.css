@@ -2,6 +2,10 @@ body {
   background-color: #7FDBFF;
 }
 
+#tamagotchi-interface {
+  top: 180px;
+}
+
 #background-egg {
   position: absolute;
   width: 400px;
