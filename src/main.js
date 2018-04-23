@@ -13,7 +13,11 @@ function showStats (tamago) {
 
 $(document).ready(function () {
   let tamago  = new Tamago();
-
+  $("#egg").show();
+  setTimeout(function() {
+    $("#egg").hide();
+    $("#normal").show();
+  }, 5000);
   showStats(tamago);
 
   setInterval(function () {
