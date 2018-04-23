@@ -13,6 +13,7 @@ function showStats (tamago) {
 
 $(document).ready(function () {
   let tamago  = new Tamago();
+
   showStats(tamago);
 
   setInterval(function () {
