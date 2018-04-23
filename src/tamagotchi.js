@@ -54,6 +54,9 @@ class Tamago {
 
   clean () {
     this.pooped = 0;
+    if (this.bathroom >= 80) {
+      this.bathroom = 30;
+    }
   }
 
 }
