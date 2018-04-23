@@ -39,6 +39,7 @@ class Tamago {
 
   feed () {
     this.hunger -= 30;
+    this.bathroom += 5;
     if (this.hunger < 0) {
       this.hunger = 0;
     }
