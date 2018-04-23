@@ -13,19 +13,17 @@ function showStats (tamago) {
 
 function checkNormal (tamago) {
   $(".tamago-gif").hide();
-  if (tamago.pooped > 0) {
-    $("#poop").show();
-    return;
-  }
-  if (tamago.sick === true) {
-    $("#sick").show();
-    return;
-  }
   if (tamago.alive === false) {
     $("#die").show();
-    return;
+    $(".buttons").hide();
+    $("#stats").hide();
+  } else if (tamago.sick === true) {
+    $("#sick").show();
+  } else if (tamago.pooped > 0) {
+    $("#poop").show();
+  } else {
+    $("#normal").show();
   }
-  $("#normal").show();
 }
 
 $(document).ready(function () {
