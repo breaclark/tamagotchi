@@ -26,9 +26,9 @@ class Tamago {
     this.happiness += 15;
   }
 
-  // sleep () {
-  //
-  // }
+  sleep () {
+    this.energy = 100;
+  }
   //
   // clean () {
   //
