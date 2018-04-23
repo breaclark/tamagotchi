@@ -29,5 +29,10 @@ describe ("Tamago", function () {
     expect(tamago.happiness).toEqual(115);
   });
 
+  it ("should reset the energy level to 100", function () {
+    tamago.sleep();
+    expect(tamago.energy).toEqual(100);
+  });
+
 
 });
