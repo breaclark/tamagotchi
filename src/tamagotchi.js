@@ -46,6 +46,10 @@ class Tamago {
     this.energy = 100;
   }
 
+  clean () {
+    this.pooped = 0;
+  }
+
 }
 
 export { Tamago };
