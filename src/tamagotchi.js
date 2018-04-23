@@ -16,20 +16,22 @@ class Tamago {
     if (this.pooped > 0) {
       this.pooped += 1;
     }
-    //should initiate things below if needed
+    if (this.bathroom >= 75) {
+      this.poop();
+    }
+    if (this.hunger > 95 || this.happiness < 5 || this.energy < 5 || this.pooped >= 5) {
+      this.die();
+    }
   }
 
   poop () {
     this.pooped = 1;
+    this.bathroom = 30;
   }
 
   die () {
     this.alive = false;
   }
-  //
-  // getSick () {
-  //
-  // }
 
   feed () {
     this.hunger -= 30;
