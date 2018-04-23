@@ -24,5 +24,10 @@ describe ("Tamago", function () {
     expect(tamago.bathroom).toEqual(32);
   });
 
+  it ("should increase the happiness level by 15", function () {
+    tamago.play();
+    expect(tamago.happiness).toEqual(115);
+  });
+
 
 });
