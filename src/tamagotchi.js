@@ -23,9 +23,9 @@ class Tamago {
     this.pooped = 1;
   }
 
-  // die () {
-  //
-  // }
+  die () {
+    this.alive = false;
+  }
   //
   // getSick () {
   //
