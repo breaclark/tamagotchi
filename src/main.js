@@ -15,8 +15,28 @@ $(document).ready(function () {
   let tamago  = new Tamago();
   showStats(tamago);
 
-  setInterval(function() {
+  setInterval(function () {
     tamago.timetick();
     showStats(tamago);
   }, 5000);
+
+  $("#feed").click(function () {
+    tamago.feed();
+    showStats(tamago);
+  });
+
+  $("#play").click(function () {
+    tamago.play();
+    showStats(tamago);
+  });
+
+  $("#sleep").click(function () {
+    tamago.sleep();
+    showStats(tamago);
+  });
+
+  $("#clean").click(function () {
+    tamago.clean();
+    showStats(tamago);
+  });
 });
